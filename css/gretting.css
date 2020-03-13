@@ -1,0 +1,48 @@
+.nameForm,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.nameForm input {
+  appearance: none;
+  background: none;
+  border: none;
+  color: #ecf0f1;
+  font-size: 50px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+.nameForm input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.nameForm input:focus {
+  animation: float 3s linear infinite forwards;
+}
+
+.greetings {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.nameForm {
+  margin-bottom: 30px;
+}
